@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompressImg</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+   
+</head>
+<body>
+    <div class="container">
+        <div class="leftSide">
+            <div class="header">
+                <h4>Compress your images with</h4>
+                <h1>CompressImager</h1>
+            </div>
+
+            <div class="dropArea" id="dropArea">
+                <p class="drop-instructions">Drag your images here or choose an existing file on your folder</p>
+
+                <input type="file" name="" id="imgInput" class="imgInput" accept="image/*" hidden>
+
+                <img src="" alt="" id="showSelectedImage"/>
+            </div>
+
+            <div class="settings">
+                <label for="range">Compression : </label>
+                <input type="range" name="" id="compressRatio" min="1" max="100" value="50">
+                <output id="slider"></output>
+                
+            </div>
+
+            <div class="compressImgbtn">
+                <button class="compressImagebtn" id="compressImagebtn">
+                    Compress <i class="bi bi-arrow-up-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="rightSide" id="previewBox">
+            <div class="imgData">
+                <p class="compressionInfo" id="compressionInfo">0% Compressed</p>
+            </div>
+            <div class="previewImage">
+                <img src="https://imgs.search.brave.com/qtGUeI6nlGllqggCEYHq2yQfLaXquaIWktPfhHKqYWU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pMC53/cC5jb20vcGljanVt/Ym8uY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy93b21hbi13aXRo/LXN1bi1nbGFzc2Vz/LWluLWZsb3dlci1m/aWVsZC1zdW1tZXIt/ZnJlZS1waG90by5q/cGc_dz02MDAmcXVh/bGl0eT04MA" alt="" srcset="" id="outputImage" style="opacity: 0.4;">
+            </div>
+            <button id="downloadbtn" class="dbtn">
+                Download Image
+            </button>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
